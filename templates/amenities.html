@@ -53,9 +53,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="amenity-card h-100">
-                    <div class="amenity-icon mb-3">
-                        <i class="fas fa-spa fa-3x text-primary"></i>
-                    </div>
+                    <img src="{{ url_for('static', filename='images/spa.jpg') }}" alt="Luxury Spa" class="img-fluid rounded mb-3" width="100%">
                     <h4>Luxury Spa & Wellness</h4>
                     <p>Our tranquil spa offers a range of rejuvenating treatments, therapies, and massages designed to relax, revitalize, and restore your well-being.</p>
                     <ul class="amenity-features">
@@ -68,9 +66,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="amenity-card h-100">
-                    <div class="amenity-icon mb-3">
-                        <i class="fas fa-swimming-pool fa-3x text-primary"></i>
-                    </div>
+                    <img src="{{ url_for('static', filename='images/pool.jpg') }}" alt="Swimming Pool" class="img-fluid rounded mb-3" width="100%">
                     <h4>Swimming Pools</h4>
                     <p>Enjoy our stunning infinity pool and heated indoor pool, perfect for a refreshing swim or leisurely lounging with beautiful garden views.</p>
                     <ul class="amenity-features">
@@ -241,10 +237,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="garden-image">
-                    <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="100%" fill="#3a5a46" />
-                        <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Garden Image</text>
-                    </svg>
+                    <img src="{{ url_for('static', filename='images/hotel-facade.jpg') }}" alt="Garden View" class="img-fluid rounded shadow" width="100%">
                 </div>
             </div>
             <div class="col-lg-6">
