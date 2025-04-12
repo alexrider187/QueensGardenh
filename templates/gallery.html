@@ -1,0 +1,444 @@
+{% extends "layout.html" %}
+
+{% block title %}Gallery - Queens Garden Hotel{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Photo Gallery</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Introduction -->
+<section class="gallery-intro py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Experience Queens Garden Hotel</h2>
+                <p class="lead mb-0">Browse through our collection of images showcasing the beauty and luxury of our hotel, gardens, accommodations, and amenities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Filter Buttons -->
+<section class="gallery-filter py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="filter-buttons mb-4">
+                    <button class="btn btn-outline-primary me-2 mb-2 active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="hotel">Hotel</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="rooms">Rooms & Suites</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="dining">Dining</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="gardens">Gardens</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="spa">Spa & Wellness</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Grid -->
+<section class="gallery-grid py-5">
+    <div class="container">
+        <div class="row g-4" id="gallery-container">
+            <!-- Hotel Exterior -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="hotel">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Hotel Exterior</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Hotel Exterior</h5>
+                            <p>The grand facade of Queens Garden Hotel</p>
+                            <a href="#" class="gallery-zoom" data-title="Hotel Exterior">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Lobby -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="hotel">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Main Lobby</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Main Lobby</h5>
+                            <p>Elegant reception area with historic details</p>
+                            <a href="#" class="gallery-zoom" data-title="Main Lobby">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Standard Room -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="rooms">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Standard Room</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Standard Room</h5>
+                            <p>Comfortable accommodations with garden views</p>
+                            <a href="#" class="gallery-zoom" data-title="Standard Room">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deluxe Room -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="rooms">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Deluxe Room</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Deluxe Room</h5>
+                            <p>Spacious room with enhanced amenities</p>
+                            <a href="#" class="gallery-zoom" data-title="Deluxe Room">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Garden Suite -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="rooms">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Garden Suite</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Garden Suite</h5>
+                            <p>Luxurious suite with separate living area</p>
+                            <a href="#" class="gallery-zoom" data-title="Garden Suite">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Presidential Suite -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="rooms">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Presidential Suite</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Presidential Suite</h5>
+                            <p>Our most exclusive accommodation</p>
+                            <a href="#" class="gallery-zoom" data-title="Presidential Suite">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Restaurant -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="dining">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Restaurant</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Restaurant</h5>
+                            <p>Fine dining with garden views</p>
+                            <a href="#" class="gallery-zoom" data-title="Restaurant">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Signature Dish -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="dining">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Signature Dish</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Signature Dish</h5>
+                            <p>Culinary excellence from our chef</p>
+                            <a href="#" class="gallery-zoom" data-title="Signature Dish">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Garden Lounge -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="dining">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Garden Lounge</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Garden Lounge</h5>
+                            <p>Elegant bar with craft cocktails</p>
+                            <a href="#" class="gallery-zoom" data-title="Garden Lounge">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rose Garden -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="gardens">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Rose Garden</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Rose Garden</h5>
+                            <p>Beautiful rose collection in bloom</p>
+                            <a href="#" class="gallery-zoom" data-title="Rose Garden">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Water Garden -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="gardens">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Water Garden</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Water Garden</h5>
+                            <p>Tranquil ponds and water features</p>
+                            <a href="#" class="gallery-zoom" data-title="Water Garden">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Garden Paths -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="gardens">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Garden Paths</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Garden Paths</h5>
+                            <p>Winding walkways through lush gardens</p>
+                            <a href="#" class="gallery-zoom" data-title="Garden Paths">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Spa Reception -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="spa">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Spa Reception</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Spa Reception</h5>
+                            <p>Elegant entrance to our luxury spa</p>
+                            <a href="#" class="gallery-zoom" data-title="Spa Reception">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Treatment Room -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="spa">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Treatment Room</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Treatment Room</h5>
+                            <p>Tranquil space for spa treatments</p>
+                            <a href="#" class="gallery-zoom" data-title="Treatment Room">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Infinity Pool -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="spa">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="125" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Infinity Pool</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Infinity Pool</h5>
+                            <p>Stunning pool with garden views</p>
+                            <a href="#" class="gallery-zoom" data-title="Infinity Pool">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div id="modalImage">
+                    <!-- Image will be inserted here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Filter gallery items
+        const filterButtons = document.querySelectorAll('.filter-buttons button');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Lightbox functionality
+        const galleryZoomLinks = document.querySelectorAll('.gallery-zoom');
+        const imageModal = document.getElementById('imageModal');
+        const imageModalTitle = document.getElementById('imageModalLabel');
+        const modalImage = document.getElementById('modalImage');
+        
+        galleryZoomLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const title = this.getAttribute('data-title');
+                imageModalTitle.textContent = title;
+                
+                // Get the SVG element from the gallery item
+                const svgElement = this.closest('.gallery-card').querySelector('svg').cloneNode(true);
+                modalImage.innerHTML = '';
+                modalImage.appendChild(svgElement);
+                
+                // Show the modal
+                const bsModal = new bootstrap.Modal(imageModal);
+                bsModal.show();
+            });
+        });
+    });
+</script>
+{% endblock %}

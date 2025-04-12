@@ -1,0 +1,320 @@
+{% extends "layout.html" %}
+
+{% block title %}About Us - Queens Garden Hotel{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>About Queens Garden Hotel</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story -->
+<section class="our-story py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="story-image">
+                    <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#3a5a46" />
+                        <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Historic Hotel Image</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="story-content">
+                    <h5 class="text-primary text-uppercase">Our Story</h5>
+                    <h2 class="mb-4">A Legacy of Luxury</h2>
+                    <p class="mb-4">Queens Garden Hotel has a rich and storied history dating back to 1925 when it was first established as a private estate owned by the prominent Edwards family. The magnificent property was known for its stunning gardens and became a gathering place for high society.</p>
+                    <p class="mb-4">In 1950, the estate was transformed into a luxury hotel while preserving its original charm and architectural beauty. Through careful restoration and modern enhancements, Queens Garden Hotel has evolved into the premier luxury destination it is today.</p>
+                    <p>Throughout its history, the hotel has welcomed distinguished guests including royalty, world leaders, and celebrities. We continue to uphold the traditions of exceptional service and attention to detail that have defined our legacy for nearly a century.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="vision-mission py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="vision-box h-100 p-4">
+                    <h3 class="mb-3">Our Vision</h3>
+                    <p>To be recognized globally as the epitome of luxury hospitality, where exceptional service, elegant surroundings, and unforgettable experiences come together to create a sanctuary for our guests.</p>
+                    <p>We aim to set the standard for luxury hotels by consistently exceeding expectations and creating a lasting impression on everyone who walks through our doors.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mission-box h-100 p-4">
+                    <h3 class="mb-3">Our Mission</h3>
+                    <p>To provide an unparalleled hospitality experience through personalized service, luxurious accommodations, and world-class amenities in a setting of natural beauty and tranquility.</p>
+                    <p>We are committed to creating memorable moments for our guests while preserving our heritage, supporting our community, and maintaining sustainable practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Gardens -->
+<section class="gardens-history py-5">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="gardens-image">
+                    <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#3a5a46" />
+                        <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Historic Gardens Image</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gardens-content">
+                    <h5 class="text-primary text-uppercase">Our Famous Gardens</h5>
+                    <h2 class="mb-4">A Botanical Heritage</h2>
+                    <p class="mb-4">The gardens at Queens Garden Hotel are the heart and soul of our property, spanning over five acres of meticulously maintained landscapes. Originally designed by renowned botanist Dr. Eleanor Bennett in 1928, our gardens feature a unique collection of rare plants from around the world.</p>
+                    <p class="mb-4">Over the decades, the gardens have evolved while maintaining their historic charm. They include formal rose gardens, tranquil water features, secret pathways, and seasonal displays that change throughout the year.</p>
+                    <p>Our gardens have been recognized with numerous awards and are frequently featured in horticultural publications. They remain a peaceful sanctuary for our guests and a testament to our commitment to preserving natural beauty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Architecture -->
+<section class="architecture py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="section-header text-center mb-5">
+                    <h5 class="text-primary text-uppercase">Architectural Excellence</h5>
+                    <h2>Timeless Design</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="architecture-feature">
+                            <h4>Historic Main Building</h4>
+                            <p>Our main building is a stunning example of Georgian architecture with its symmetrical design, ornate detailing, and imposing columns. The original structure has been carefully preserved while updating the interior to provide modern luxury.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="architecture-feature">
+                            <h4>Garden Wing</h4>
+                            <p>Added in 1975, the Garden Wing seamlessly blends contemporary design with the historic aesthetic of the main building. Floor-to-ceiling windows throughout this wing provide panoramic views of the surrounding gardens.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="architecture-feature">
+                            <h4>The Conservatory</h4>
+                            <p>Our glass-enclosed conservatory, built in 1932, houses exotic plant species and serves as a magical setting for afternoon tea and special events. The wrought iron framework and crystal chandeliers create a space of timeless elegance.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="architecture-feature">
+                            <h4>The Spa Pavilion</h4>
+                            <p>Our newest addition, completed in 2019, the Spa Pavilion is a modern structure that uses sustainable materials and design principles. Its clean lines and natural elements complement the historic buildings while providing a contemporary wellness space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="leadership-team py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h5 class="text-primary text-uppercase">Our Team</h5>
+            <h2>Leadership</h2>
+            <p class="lead">Meet the dedicated professionals who ensure exceptional experiences for our guests</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="team-member text-center">
+                    <div class="member-image mb-3">
+                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="rounded-circle mx-auto">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="100" y="100" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffffff">J.R.</text>
+                        </svg>
+                    </div>
+                    <h4>James Richards</h4>
+                    <p class="text-primary mb-2">General Manager</p>
+                    <p class="mb-3">With over 25 years in luxury hospitality, James brings a wealth of experience and a passion for exceptional service to Queens Garden Hotel.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="team-member text-center">
+                    <div class="member-image mb-3">
+                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="rounded-circle mx-auto">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="100" y="100" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffffff">S.C.</text>
+                        </svg>
+                    </div>
+                    <h4>Sophia Chen</h4>
+                    <p class="text-primary mb-2">Head of Guest Relations</p>
+                    <p class="mb-3">Sophia ensures that every guest experience is personalized and memorable, leading a team dedicated to anticipating and exceeding expectations.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="team-member text-center">
+                    <div class="member-image mb-3">
+                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="rounded-circle mx-auto">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="100" y="100" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffffff">M.L.</text>
+                        </svg>
+                    </div>
+                    <h4>Marcus Laurent</h4>
+                    <p class="text-primary mb-2">Executive Chef</p>
+                    <p class="mb-3">Award-winning Chef Marcus creates culinary masterpieces that celebrate local ingredients and global flavors at our signature restaurant.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sustainability -->
+<section class="sustainability py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="sustainability-image">
+                    <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#3a5a46" />
+                        <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Sustainability Initiatives Image</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="sustainability-content">
+                    <h5 class="text-primary text-uppercase">Our Commitment</h5>
+                    <h2 class="mb-4">Sustainability Initiatives</h2>
+                    <p class="mb-4">At Queens Garden Hotel, we are committed to responsible luxury and sustainable practices that protect our environment while enhancing guest experiences.</p>
+                    <div class="sustainability-initiatives">
+                        <div class="initiative-item mb-3">
+                            <h5><i class="fas fa-leaf text-primary me-2"></i> Environmental Conservation</h5>
+                            <p>Our gardens serve as a habitat for local wildlife and include a significant number of native plant species. We've implemented water conservation systems throughout the property and use rainwater harvesting for garden irrigation.</p>
+                        </div>
+                        <div class="initiative-item mb-3">
+                            <h5><i class="fas fa-recycle text-primary me-2"></i> Waste Reduction</h5>
+                            <p>We've eliminated single-use plastics throughout the hotel and implement comprehensive recycling and composting programs. Food waste from our restaurants is donated to local community programs or composted for our gardens.</p>
+                        </div>
+                        <div class="initiative-item">
+                            <h5><i class="fas fa-hands-helping text-primary me-2"></i> Community Engagement</h5>
+                            <p>We support local suppliers, artisans, and businesses, sourcing over 70% of our restaurant ingredients from within a 50-mile radius. We also participate in community initiatives and educational programs about sustainable hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Awards & Recognition -->
+<section class="awards-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h5 class="text-primary text-uppercase">Excellence Recognized</h5>
+            <h2>Awards & Accolades</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="awards-list">
+                    <div class="award-item mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                <i class="fas fa-award fa-3x text-primary"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>Five-Star Excellence Award</h4>
+                                <p class="mb-1">International Luxury Hotel Association, 2022</p>
+                                <p>Recognized for outstanding service, luxurious accommodations, and exceptional guest experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="award-item mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                <i class="fas fa-trophy fa-3x text-primary"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>Best Hotel Gardens</h4>
+                                <p class="mb-1">National Garden Association, 2021</p>
+                                <p>Awarded for our meticulously maintained gardens and commitment to botanical preservation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="award-item mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                <i class="fas fa-star fa-3x text-primary"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>Culinary Excellence Award</h4>
+                                <p class="mb-1">Global Gastronomy Institute, 2020</p>
+                                <p>Our restaurant was recognized for innovative cuisine and outstanding dining experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                <i class="fas fa-leaf fa-3x text-primary"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>Green Hospitality Certification</h4>
+                                <p class="mb-1">Sustainable Tourism International, 2019-2022</p>
+                                <p>Awarded for our comprehensive sustainability initiatives and environmentally responsible practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h5 class="text-primary text-uppercase">Guest Experiences</h5>
+            <h2>What Our Guests Say</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="testimonial-carousel">
+                    <div class="testimonial-item text-center p-4">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="mb-4">"Queens Garden Hotel is truly a gem. The historic property has been beautifully maintained while offering all modern luxuries. The gardens are simply breathtaking - we spent hours exploring the different areas. The staff made us feel like royalty from the moment we arrived."</p>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h6 class="mb-0">Richard & Elizabeth Miller</h6>
+                                <small>New York, USA</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

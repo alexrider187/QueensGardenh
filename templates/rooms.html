@@ -1,0 +1,358 @@
+{% extends "layout.html" %}
+
+{% block title %}Rooms & Suites - Queens Garden Hotel{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Our Rooms & Suites</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Rooms & Suites</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rooms Introduction -->
+<section class="rooms-intro py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Luxurious Accommodations</h2>
+                <p class="lead mb-4">Queens Garden Hotel offers a range of elegantly appointed rooms and suites, each designed with your comfort in mind. Experience the perfect blend of luxury, comfort, and personalized service during your stay.</p>
+                <p>All rooms feature premium bedding, complimentary high-speed Wi-Fi, smart TVs, luxury toiletries, and stunning views of our gardens or the surrounding landscape.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Room Categories -->
+<section class="room-categories py-5 bg-light">
+    <div class="container">
+        <!-- Standard Room -->
+        <div class="room-item mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="room-image">
+                        <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Standard Room Image</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="room-details">
+                        <h3 class="mb-3">Standard Room</h3>
+                        <div class="room-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-4">Our Standard Rooms offer comfort and elegance with beautiful garden views. Perfect for solo travelers or couples seeking a cozy retreat with all essential amenities.</p>
+                        <div class="room-features mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bed me-2 text-primary"></i> Queen Bed
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-users me-2 text-primary"></i> 2 Guests
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-wifi me-2 text-primary"></i> Free Wi-Fi
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-tv me-2 text-primary"></i> Smart TV
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bath me-2 text-primary"></i> En-suite Bathroom
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-coffee me-2 text-primary"></i> Tea/Coffee Facilities
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-price-book">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span class="fs-4 fw-bold">$199</span> / night
+                                </div>
+                                <a href="#booking-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room-type="standard">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deluxe Room -->
+        <div class="room-item mb-5">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="room-image">
+                        <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Deluxe Room Image</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="room-details">
+                        <h3 class="mb-3">Deluxe Room</h3>
+                        <div class="room-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                        <p class="mb-4">Our Deluxe Rooms offer enhanced space and luxury with a private balcony overlooking our beautiful gardens. These rooms feature premium amenities for an elevated stay experience.</p>
+                        <div class="room-features mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bed me-2 text-primary"></i> King Bed
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-users me-2 text-primary"></i> 2 Guests
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-wifi me-2 text-primary"></i> Free Wi-Fi
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-tv me-2 text-primary"></i> 4K Smart TV
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bath me-2 text-primary"></i> Luxury Bathroom
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-coffee me-2 text-primary"></i> Coffee Machine
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-door-open me-2 text-primary"></i> Private Balcony
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-robe me-2 text-primary"></i> Premium Bathrobes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-price-book">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span class="fs-4 fw-bold">$299</span> / night
+                                </div>
+                                <a href="#booking-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room-type="deluxe">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Garden Suite -->
+        <div class="room-item mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="room-image">
+                        <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Garden Suite Image</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="room-details">
+                        <h3 class="mb-3">Garden Suite</h3>
+                        <div class="room-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-4">Experience luxury in our Garden Suites, featuring a separate living area and panoramic views of our award-winning gardens. These spacious suites combine elegance with comfort for an unforgettable stay.</p>
+                        <div class="room-features mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bed me-2 text-primary"></i> King Bed
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-users me-2 text-primary"></i> 3 Guests
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-couch me-2 text-primary"></i> Separate Living Area
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-wifi me-2 text-primary"></i> Free Wi-Fi
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-tv me-2 text-primary"></i> Multiple Smart TVs
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bath me-2 text-primary"></i> Jacuzzi Tub
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-coffee me-2 text-primary"></i> Premium Coffee Machine
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-door-open me-2 text-primary"></i> Wraparound Balcony
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-price-book">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span class="fs-4 fw-bold">$399</span> / night
+                                </div>
+                                <a href="#booking-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room-type="suite">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Presidential Suite -->
+        <div class="room-item">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="room-image">
+                        <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Presidential Suite Image</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="room-details">
+                        <h3 class="mb-3">Presidential Suite</h3>
+                        <div class="room-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-4">Our most exclusive accommodation, the Presidential Suite offers unparalleled luxury with multiple rooms, personalized butler service, and breathtaking views. Experience the ultimate in comfort and sophistication.</p>
+                        <div class="room-features mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bed me-2 text-primary"></i> King Bed
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-users me-2 text-primary"></i> 4 Guests
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-door-closed me-2 text-primary"></i> Multiple Rooms
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-user-tie me-2 text-primary"></i> Butler Service
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-wifi me-2 text-primary"></i> Premium Wi-Fi
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-tv me-2 text-primary"></i> Home Theater System
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-bath me-2 text-primary"></i> Luxury Spa Bathroom
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-glass-cheers me-2 text-primary"></i> Private Bar
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-utensils me-2 text-primary"></i> Private Dining Area
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <i class="fas fa-door-open me-2 text-primary"></i> Private Terrace
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-price-book">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span class="fs-4 fw-bold">$799</span> / night
+                                </div>
+                                <a href="#booking-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room-type="presidential">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Room Policies -->
+<section class="room-policies py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h3 class="mb-4 text-center">Room Policies</h3>
+                <div class="policy-item mb-3">
+                    <h5><i class="fas fa-clock me-2 text-primary"></i> Check-in/Check-out</h5>
+                    <p>Check-in: 3:00 PM | Check-out: 12:00 PM<br>Early check-in and late check-out available upon request (additional charges may apply).</p>
+                </div>
+                <div class="policy-item mb-3">
+                    <h5><i class="fas fa-credit-card me-2 text-primary"></i> Deposit</h5>
+                    <p>A valid credit card is required at check-in for incidental charges and a refundable security deposit.</p>
+                </div>
+                <div class="policy-item mb-3">
+                    <h5><i class="fas fa-ban me-2 text-primary"></i> Cancellation Policy</h5>
+                    <p>Cancellations must be made 48 hours prior to arrival to avoid a one-night charge. Special packages and promotional rates may have different cancellation policies.</p>
+                </div>
+                <div class="policy-item">
+                    <h5><i class="fas fa-paw me-2 text-primary"></i> Pet Policy</h5>
+                    <p>We welcome pets in select rooms for an additional fee of $50 per night. Please inform us in advance if you plan to bring your furry friend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Book Now CTA -->
+<section class="cta-section py-5 bg-primary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2 class="text-white mb-2">Ready to experience luxury at Queens Garden Hotel?</h2>
+                <p class="text-white mb-0">Reserve your perfect room today and enjoy our special amenities package.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="#booking-modal" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set room type in booking form based on selected room
+        const bookNowButtons = document.querySelectorAll('[data-room-type]');
+        
+        bookNowButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const roomType = this.getAttribute('data-room-type');
+                const roomTypeSelect = document.getElementById('roomType');
+                
+                // Set the selected option in the modal
+                for (let i = 0; i < roomTypeSelect.options.length; i++) {
+                    if (roomTypeSelect.options[i].value === roomType) {
+                        roomTypeSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

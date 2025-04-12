@@ -1,0 +1,295 @@
+{% extends "layout.html" %}
+
+{% block title %}Queens Garden Hotel - Luxury Hotel{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="display-3 fw-bold text-white mb-4 animate__animated animate__fadeInDown">Welcome to Queens Garden Hotel</h1>
+        <p class="lead text-white mb-5 animate__animated animate__fadeInUp">Experience luxury in the heart of nature</p>
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="#booking-modal" class="btn btn-lg btn-primary me-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+            <a href="{{ url_for('rooms') }}" class="btn btn-lg btn-outline-light">Explore Rooms</a>
+        </div>
+    </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="welcome-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="welcome-image">
+                    <div class="image-container">
+                        <svg width="100%" height="100%" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#2a4c38" />
+                            <text x="300" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Hotel Façade Image</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="welcome-text">
+                    <h5 class="text-primary text-uppercase">Welcome to Queens Garden</h5>
+                    <h2 class="mb-4">A Luxurious Experience Awaits</h2>
+                    <p class="mb-4">Nestled in lush landscapes and vibrant gardens, Queens Garden Hotel offers an unparalleled blend of luxury and natural beauty. Each detail of our establishment is thoughtfully designed to provide you with an extraordinary stay experience.</p>
+                    <p class="mb-4">From the moment you step through our doors, our dedicated staff ensures your comfort and satisfaction with personalized service that exceeds expectations.</p>
+                    <div class="features-list">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Luxurious Accommodations</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Gourmet Dining</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Serene Spa Treatments</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Enchanting Garden Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('about') }}" class="btn btn-primary mt-4">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Room Showcase -->
+<section class="room-showcase py-5 bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h5 class="text-primary text-uppercase">Our Accommodations</h5>
+            <h2>Elegant Rooms & Suites</h2>
+            <p class="lead">Choose your perfect stay from our selection of beautifully designed spaces</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card room-card h-100">
+                    <div class="card-img-container">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="100" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">Standard Room</text>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Room</h5>
+                        <p class="card-text">Cozy and comfortable accommodation with garden views, perfect for solo travelers or couples.</p>
+                        <ul class="amenities-list">
+                            <li><i class="fas fa-bed me-2"></i> Queen Bed</li>
+                            <li><i class="fas fa-wifi me-2"></i> Free Wi-Fi</li>
+                            <li><i class="fas fa-tv me-2"></i> Smart TV</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price">From $199/night</span>
+                            <a href="{{ url_for('rooms') }}" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card room-card h-100">
+                    <div class="card-img-container">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="100" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">Deluxe Room</text>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Room</h5>
+                        <p class="card-text">Spacious accommodation with enhanced amenities and a private balcony overlooking the gardens.</p>
+                        <ul class="amenities-list">
+                            <li><i class="fas fa-bed me-2"></i> King Bed</li>
+                            <li><i class="fas fa-wifi me-2"></i> Free Wi-Fi</li>
+                            <li><i class="fas fa-coffee me-2"></i> Coffee Machine</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price">From $299/night</span>
+                            <a href="{{ url_for('rooms') }}" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card room-card h-100">
+                    <div class="card-img-container">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="100" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">Garden Suite</text>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Garden Suite</h5>
+                        <p class="card-text">Luxurious suite with separate living area and panoramic views of our award-winning gardens.</p>
+                        <ul class="amenities-list">
+                            <li><i class="fas fa-bed me-2"></i> King Bed</li>
+                            <li><i class="fas fa-couch me-2"></i> Living Area</li>
+                            <li><i class="fas fa-bath me-2"></i> Jacuzzi Tub</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price">From $399/night</span>
+                            <a href="{{ url_for('rooms') }}" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card room-card h-100">
+                    <div class="card-img-container">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a5a46" />
+                            <text x="200" y="100" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">Presidential Suite</text>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Presidential Suite</h5>
+                        <p class="card-text">Our most exclusive accommodation with unmatched luxury, multiple rooms, and personal butler service.</p>
+                        <ul class="amenities-list">
+                            <li><i class="fas fa-bed me-2"></i> King Bed</li>
+                            <li><i class="fas fa-user-tie me-2"></i> Butler Service</li>
+                            <li><i class="fas fa-glass-cheers me-2"></i> Private Bar</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price">From $799/night</span>
+                            <a href="{{ url_for('rooms') }}" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('rooms') }}" class="btn btn-primary">View All Rooms</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-utensils fa-3x text-primary"></i>
+                    </div>
+                    <h4>Gourmet Dining</h4>
+                    <p>Experience culinary excellence at our restaurant featuring fresh, locally-sourced ingredients and global flavors.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-spa fa-3x text-primary"></i>
+                    </div>
+                    <h4>Luxury Spa</h4>
+                    <p>Indulge in rejuvenating treatments and therapies at our world-class spa, designed for ultimate relaxation.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-swimming-pool fa-3x text-primary"></i>
+                    </div>
+                    <h4>Infinity Pool</h4>
+                    <p>Enjoy our stunning infinity pool overlooking lush gardens, perfect for a refreshing swim or leisurely lounging.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h5 class="text-primary text-uppercase">Guest Experiences</h5>
+            <h2>What Our Guests Say</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-4">"An absolutely magical experience! The garden views from our suite were breathtaking, and the staff went above and beyond to make our anniversary special."</p>
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h6 class="mb-0">Emma & James Thompson</h6>
+                            <small>London, UK</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-4">"Queens Garden Hotel exceeded all our expectations. The attention to detail, from the room decor to the personalized welcome note, made us feel truly special."</p>
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h6 class="mb-0">Michael Chen</h6>
+                            <small>Singapore</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-4">"The Garden Suite was a perfect retreat after our busy days exploring the city. The spa treatments were exceptional, and the breakfast was simply divine!"</p>
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h6 class="mb-0">Sophia Rodriguez</h6>
+                            <small>Barcelona, Spain</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="cta-content text-center py-5">
+            <h2 class="mb-4">Experience the Ultimate Luxury Getaway</h2>
+            <p class="lead mb-4">Book your stay now and receive a complimentary spa treatment</p>
+            <a href="#booking-modal" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Reserve Your Stay</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

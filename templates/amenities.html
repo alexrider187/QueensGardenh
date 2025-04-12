@@ -1,0 +1,441 @@
+{% extends "layout.html" %}
+
+{% block title %}Amenities & Services - Queens Garden Hotel{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Amenities & Services</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Amenities & Services</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Amenities Introduction -->
+<section class="amenities-intro py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Exceptional Services & Facilities</h2>
+                <p class="lead mb-4">At Queens Garden Hotel, we pride ourselves on offering a comprehensive range of premium amenities and services designed to enhance your stay. Every detail has been thoughtfully considered to ensure your comfort and satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Amenities -->
+<section class="key-amenities py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="amenity-card h-100">
+                    <div class="amenity-icon mb-3">
+                        <i class="fas fa-utensils fa-3x text-primary"></i>
+                    </div>
+                    <h4>Fine Dining Restaurant</h4>
+                    <p>Our signature restaurant offers exquisite cuisine prepared by award-winning chefs. Featuring locally-sourced ingredients and international flavors, each dish is crafted to perfection.</p>
+                    <ul class="amenity-features">
+                        <li><i class="fas fa-check text-primary me-2"></i> Breakfast: 6:30 AM - 10:30 AM</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Lunch: 12:00 PM - 2:30 PM</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Dinner: 6:00 PM - 10:00 PM</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> In-room dining available 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="amenity-card h-100">
+                    <div class="amenity-icon mb-3">
+                        <i class="fas fa-spa fa-3x text-primary"></i>
+                    </div>
+                    <h4>Luxury Spa & Wellness</h4>
+                    <p>Our tranquil spa offers a range of rejuvenating treatments, therapies, and massages designed to relax, revitalize, and restore your well-being.</p>
+                    <ul class="amenity-features">
+                        <li><i class="fas fa-check text-primary me-2"></i> Open daily: 9:00 AM - 8:00 PM</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Signature massages and treatments</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Expert therapists and practitioners</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Advance booking recommended</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="amenity-card h-100">
+                    <div class="amenity-icon mb-3">
+                        <i class="fas fa-swimming-pool fa-3x text-primary"></i>
+                    </div>
+                    <h4>Swimming Pools</h4>
+                    <p>Enjoy our stunning infinity pool and heated indoor pool, perfect for a refreshing swim or leisurely lounging with beautiful garden views.</p>
+                    <ul class="amenity-features">
+                        <li><i class="fas fa-check text-primary me-2"></i> Outdoor infinity pool: 7:00 AM - 7:00 PM</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Heated indoor pool: 6:00 AM - 9:00 PM</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Poolside service available</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Towels provided</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="amenity-card h-100">
+                    <div class="amenity-icon mb-3">
+                        <i class="fas fa-dumbbell fa-3x text-primary"></i>
+                    </div>
+                    <h4>Fitness Center</h4>
+                    <p>Our state-of-the-art fitness center features premium equipment and offers personal training sessions and fitness classes to keep you active during your stay.</p>
+                    <ul class="amenity-features">
+                        <li><i class="fas fa-check text-primary me-2"></i> Open 24 hours for hotel guests</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Cardio and strength training equipment</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Yoga and pilates classes available</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Personal trainers by appointment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="amenity-card h-100">
+                    <div class="amenity-icon mb-3">
+                        <i class="fas fa-glass-cheers fa-3x text-primary"></i>
+                    </div>
+                    <h4>Garden Lounge & Bar</h4>
+                    <p>Our elegant lounge and bar offers a sophisticated atmosphere for enjoying fine wines, crafted cocktails, and light refreshments with panoramic garden views.</p>
+                    <ul class="amenity-features">
+                        <li><i class="fas fa-check text-primary me-2"></i> Open: 11:00 AM - Midnight</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Extensive wine and spirits selection</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Signature cocktails</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Afternoon tea service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="amenity-card h-100">
+                    <div class="amenity-icon mb-3">
+                        <i class="fas fa-concierge-bell fa-3x text-primary"></i>
+                    </div>
+                    <h4>Concierge Services</h4>
+                    <p>Our dedicated concierge team is available 24/7 to assist with all your needs, from restaurant reservations to arranging tours and transportation.</p>
+                    <ul class="amenity-features">
+                        <li><i class="fas fa-check text-primary me-2"></i> 24-hour availability</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Tour and activity bookings</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Restaurant reservations</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> Transportation arrangements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Services -->
+<section class="additional-services py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Additional Services</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="service-list">
+                    <div class="service-item mb-4">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-shuttle-van text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Airport Transfers</h5>
+                                <p>Luxury transportation to and from the airport for a seamless arrival and departure experience. Advance booking required.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item mb-4">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-car text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Valet Parking</h5>
+                                <p>Complimentary valet parking for hotel guests with 24-hour access to your vehicle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item mb-4">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-baby text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Babysitting</h5>
+                                <p>Professional childcare services available upon request with advance notice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-tshirt text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Laundry & Dry Cleaning</h5>
+                                <p>Same-day service available for items received before 9:00 AM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-list">
+                    <div class="service-item mb-4">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-language text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Multilingual Staff</h5>
+                                <p>Our staff speaks multiple languages to accommodate international guests.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item mb-4">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-business-time text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Business Center</h5>
+                                <p>Fully equipped business center with printing, copying, and secretarial services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item mb-4">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-gifts text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Gift Shop</h5>
+                                <p>Our boutique shop offers souvenirs, essentials, and luxury items. Open daily from 8:00 AM to 8:00 PM.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="d-flex">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-wifi text-primary"></i>
+                            </div>
+                            <div class="service-details">
+                                <h5>Complimentary Wi-Fi</h5>
+                                <p>High-speed internet access available throughout the hotel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gardens & Outdoor Spaces -->
+<section class="gardens-section py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="garden-image">
+                    <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#3a5a46" />
+                        <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Garden Image</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="garden-content">
+                    <h3 class="mb-4">Award-Winning Gardens</h3>
+                    <p class="mb-4">The crown jewel of our hotel is our meticulously maintained gardens, featuring rare plant species, tranquil water features, and secluded seating areas. Our gardens have received multiple awards for their design and sustainability.</p>
+                    <div class="garden-features">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="garden-feature">
+                                    <i class="fas fa-leaf text-primary me-2"></i>
+                                    <span>Botanical Collections</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="garden-feature">
+                                    <i class="fas fa-kiwi-bird text-primary me-2"></i>
+                                    <span>Bird Sanctuary</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="garden-feature">
+                                    <i class="fas fa-water text-primary me-2"></i>
+                                    <span>Reflection Ponds</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="garden-feature">
+                                    <i class="fas fa-tree text-primary me-2"></i>
+                                    <span>Rose Garden</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="garden-feature">
+                                    <i class="fas fa-hiking text-primary me-2"></i>
+                                    <span>Walking Paths</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="garden-feature">
+                                    <i class="fas fa-moon text-primary me-2"></i>
+                                    <span>Evening Illumination</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">Guided garden tours are available daily at 10:00 AM and 4:00 PM, led by our resident horticulturist. Private tours can be arranged through the concierge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events & Meeting Spaces -->
+<section class="events-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="section-header text-center mb-5">
+                    <h2>Events & Meeting Spaces</h2>
+                    <p class="lead">Host your special occasions and business meetings in our elegant venues</p>
+                </div>
+                <div class="events-content">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="event-venue">
+                                <h4>Garden Ballroom</h4>
+                                <p>Our largest venue, perfect for weddings and grand celebrations with floor-to-ceiling windows overlooking the gardens.</p>
+                                <ul class="venue-specs">
+                                    <li><strong>Capacity:</strong> Up to 200 guests</li>
+                                    <li><strong>Size:</strong> 4,500 sq ft</li>
+                                    <li><strong>Features:</strong> Built-in AV system, adjustable lighting, private entrance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="event-venue">
+                                <h4>Executive Boardroom</h4>
+                                <p>Sophisticated space for business meetings and corporate retreats with state-of-the-art technology.</p>
+                                <ul class="venue-specs">
+                                    <li><strong>Capacity:</strong> Up to 20 guests</li>
+                                    <li><strong>Size:</strong> 800 sq ft</li>
+                                    <li><strong>Features:</strong> Video conferencing, interactive displays, ergonomic seating</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="event-venue">
+                                <h4>Garden Terrace</h4>
+                                <p>Stunning outdoor venue for ceremonies and receptions surrounded by lush greenery and flowers.</p>
+                                <ul class="venue-specs">
+                                    <li><strong>Capacity:</strong> Up to 150 guests</li>
+                                    <li><strong>Size:</strong> 3,000 sq ft</li>
+                                    <li><strong>Features:</strong> Covered areas, ambient lighting, panoramic garden views</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="event-venue">
+                                <h4>Private Dining Room</h4>
+                                <p>Intimate setting for special dinners and small gatherings with personalized service.</p>
+                                <ul class="venue-specs">
+                                    <li><strong>Capacity:</strong> Up to 30 guests</li>
+                                    <li><strong>Size:</strong> 1,200 sq ft</li>
+                                    <li><strong>Features:</strong> Custom menus, wine pairing options, elegant decor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p>Our dedicated events team will assist with planning and execution to ensure your event is flawless.</p>
+                        <p>For inquiries and bookings, please contact <a href="mailto:events@queensgardenhotel.com">events@queensgardenhotel.com</a> or speak with our concierge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packages Section -->
+<section class="packages-section py-5 bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>Special Packages</h2>
+            <p class="lead">Enhance your stay with our specially curated packages</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="package-card h-100">
+                    <div class="package-header p-4 bg-primary text-white">
+                        <h4 class="mb-0">Romantic Getaway</h4>
+                    </div>
+                    <div class="package-body p-4">
+                        <p class="mb-4">Create unforgettable memories with your special someone with our romantic package designed for couples.</p>
+                        <ul class="package-features mb-4">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Luxury accommodation</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Champagne and chocolate-covered strawberries upon arrival</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Couples massage at our spa</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Private candlelit dinner in the gardens</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Late checkout (subject to availability)</li>
+                        </ul>
+                        <div class="package-price mb-3">
+                            <p class="mb-0">Starting from <span class="fw-bold">$599</span> per night</p>
+                        </div>
+                        <a href="#booking-modal" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book This Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="package-card h-100">
+                    <div class="package-header p-4 bg-primary text-white">
+                        <h4 class="mb-0">Wellness Retreat</h4>
+                    </div>
+                    <div class="package-body p-4">
+                        <p class="mb-4">Rejuvenate your mind, body, and spirit with our comprehensive wellness package.</p>
+                        <ul class="package-features mb-4">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Deluxe accommodation</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Daily yoga and meditation sessions</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Two spa treatments per person</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Healthy gourmet meals</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Personal wellness consultation</li>
+                        </ul>
+                        <div class="package-price mb-3">
+                            <p class="mb-0">Starting from <span class="fw-bold">$699</span> per night</p>
+                        </div>
+                        <a href="#booking-modal" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book This Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="package-card h-100">
+                    <div class="package-header p-4 bg-primary text-white">
+                        <h4 class="mb-0">Family Adventure</h4>
+                    </div>
+                    <div class="package-body p-4">
+                        <p class="mb-4">Create lasting family memories with activities and amenities designed for guests of all ages.</p>
+                        <ul class="package-features mb-4">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Family suite accommodation</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Welcome gifts for children</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Daily breakfast for the family</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Guided garden treasure hunt</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> One family activity per day</li>
+                        </ul>
+                        <div class="package-price mb-3">
+                            <p class="mb-0">Starting from <span class="fw-bold">$799</span> per night</p>
+                        </div>
+                        <a href="#booking-modal" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book This Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
